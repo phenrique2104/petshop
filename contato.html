@@ -1,0 +1,64 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PetShop</title>
+    <!-- css geral da petshop -->
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/geral.css"> 
+    <link rel="stylesheet" href="css/contato.css"> 
+
+</head>
+<body>
+    <!-- cabeçalho petshop -->
+    <header>
+        <div class="container">
+            <img src="img/logo-pet-2.png" alt="Logo da Petshop">
+            <h1>Pet Shop</h1>
+            <!-- nav - navegação do menu -->
+            <nav class="menu">
+                <a href="index.html">HOME</a>
+                <a href="galeria.html">GALERIA</a>
+                <a href="contato.html">CONTATO</a>                
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- INICIO DO CONTEUDO DO SITE -->
+    <section>
+        <aside>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.6775469472973!2d-51.19394568488557!3d-30.0174139818922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979c56d0e03b1%3A0xcc4ea47f1ca6dd2e!2sTargetTrust!5e0!3m2!1spt-BR!2sbr!4v1579644986740!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
+        </aside>
+        <aside>
+        <form method="POST" onsubmit="return validaForm()">
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"></input>
+            <br>
+            <input type="text" id="email" name="email" placeholder="Digite seu e-mail"></input>
+            <br>
+            <textarea name="msg" id="msg" name="msg" placeholder="Digite uma mensagem"></textarea>
+            <br>
+            <button type="submit" class="a">
+                <span>Enviar</span>
+            </button>
+
+            <div id="erro"></div>
+        </form>
+        </aside>
+        <!-- essa div serve apenas para corrigir o problema do flot com os filhos -->
+        <div class="clear">
+    </section>
+
+    <!-- FINAL DO CONTEÚDO DO SITE -->
+    
+    <script src="js/contato.js"></script>
+
+    <!-- RODAPÉ -->
+    <footer>
+    Rua São Francisco da California, 23 - POA    
+    </footer>
+
+   
+</body>
+</html>

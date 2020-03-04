@@ -1,0 +1,55 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PetShop</title>
+    <!-- css geral da petshop -->
+    <!-- PARA PEGAR FONTES DA WEB GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/geral.css"> 
+    <link rel="stylesheet" href="css/galeria.css"> 
+
+</head>
+<body>
+    <!-- cabeçalho petshop -->
+    <header>
+            <div class="container">
+                <img src="img/logo-pet-2.png" alt="Logo da Petshop">
+                <h1>Pet Shop</h1>
+                <!-- nav - navegação do menu -->
+                <nav class="menu">
+                    <a href="index.html">HOME</a>
+                    <a href="galeria.html">GALERIA</a>
+                    <a href="contato.html">CONTATO</a>                
+                </nav>
+                
+            </div>
+        </header>
+        <!-- CONTEUDO DO SITE -->
+
+        <section>
+            <img src="img/dogs/basenji.jpg" id="dogao">
+            <h2 id="nomeDogao">Basenji</h2>
+            
+            <nav class="miniaturas">
+                <img src="img/dogs/basenji.jpg" alt="Basenji" class="selecionado" onclick="trocaDog(this)">
+                <img src="img/dogs/bolognese.jpg" alt="Bolognese" onclick="trocaDog(this)">
+                <img src="img/dogs/bull.jpg" alt="Bull" onclick="trocaDog(this)">
+                <img src="img/dogs/pinscher.jpg" alt="Snoop Dogg" id="pinscher" onclick="trocaDog(this)">
+                <img src="img/dogs/hound.jpg" alt="Hound" onclick="trocaDog(this)">
+
+            </nav>
+        </section>
+
+        <!-- FIM DO CONTEUDO -->
+      
+
+    
+    <footer>
+    Rua São Francisco da California, 23 - POA    
+    </footer>
+
+    <script src="js/galeria.js"></script>
+</body>
+</html>

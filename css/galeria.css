@@ -1,0 +1,32 @@
+.menu a:nth-child(2){
+    background: #4a8507;
+}
+
+section {
+    width: 620px;
+    border: 1px solid black;
+    min-height: 300px;
+    margin: 60px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 5px rgba( 0, 0, 0, 0.5);
+    /* text-shadow: 5px 5px 5px #333333; */
+    text-align: center;
+    padding: 18px 0px;
+}
+
+.miniaturas img {
+    border: 2px solid #4a8507;
+    width: 110px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pinscher {
+    height: 69.3;
+} 
+
+.miniaturas img:hover,
+.miniaturas img.selecionado {
+    border: 2px dashed #4a8507;
+}

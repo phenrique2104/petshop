@@ -1,0 +1,18 @@
+/* home.css */
+
+.menu a:first-child{
+    background: #fad100;
+}
+
+section {
+    background: white;
+    width: 700px;
+    margin: 60px auto 60px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    line-height: 20px;
+    /* X , Y , SPRAD , BLUR */
+    box-shadow: 4px 4px 4px 5px rgba( 0, 0, 0, 0.5);
+    /* text-shadow: 5px 5px 5px #333333; */
+}

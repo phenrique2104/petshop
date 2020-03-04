@@ -1,0 +1,120 @@
+.menu a:last-child{
+    background: #0066cc;
+}
+
+section {
+    background: white;
+    min-height: 140px;
+    width: 620px;
+    margin: 60px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 5px rgba( 0, 0, 0, 0.5);
+    /* text-shadow: 5px 5px 5px #333333; */
+    border: 1px solid black;
+
+
+}
+
+section aside {
+    width: 300px;
+    min-height: 100px;
+    /* border: 1px solid red; */
+    
+}
+
+section aside:first-child{
+    float: left;
+}
+
+section aside:nth-child(2){
+    /* margin-top: 20px; */
+    float: right;
+   
+}
+
+/* configura o mapa */
+
+section iframe {
+    /* border: 2px solid #0066cc; */
+    height: 300px;
+    
+}
+
+/* <!-- HELPERS - classes auxiliares no layout --> */
+.clear {
+    clear: both;
+
+}
+
+/* FORMULARIO */
+form {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+form input , 
+form textarea {
+    border: 1px solid #0066cc;
+    width:294px;
+    padding: 6px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+ 
+aside form textarea {
+    height:140px;
+    font-family: Arial;
+    resize: none;
+}
+
+aside form button{
+    width: 80px;
+}
+
+form button[type=submit]{
+    border: 1px solid #0066cc;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30px;
+}
+
+form button:after {
+   
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 4px;
+        /* right: -10px; */
+        left: 5px;
+        /* transition: 0.5s; */
+        
+      
+}
+
+form button:hover span  {
+    display: none;
+    padding-right: 25px;
+}
+
+form button:hover:after {
+    opacity: 1;
+    /* content: 'll'; */
+    right: 0;
+}
+
+#erro {
+    color:red;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14px;
+
+
+}
+

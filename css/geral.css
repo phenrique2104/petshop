@@ -1,0 +1,193 @@
+/*geral.css*/
+/* cria definição de fonte customizada */
+@font-face {
+    font-family: Catshop;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Catshop'), url(../fonts/catshop.woff) format('woff');
+
+}
+
+
+.container h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 44px;
+    margin: 30px 0 0 24px;
+    /* font-family: Catshop; */
+
+    /* APLICA NEON */
+    animation-name: neon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+        
+}    
+
+
+body {
+    background: rgb(56, 124, 170) url(../img/bg-owl-carrousel.png);
+    /* background-position: center; */
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+
+header {
+    /* utilizar borda para visualizar o tamanho do header */
+    /* border: 3px solid red; */
+    min-height: 130px;
+    background: rgba( 0, 0, 0, 0.5);
+}
+
+.container {
+    /* width 996px para se ajustar aos monitores de resolução menor */
+    width: 996px;
+    /* border: 1px solid yellow; */
+    margin: 0 auto; /*centraliza o elemento*/
+
+}
+
+
+.container img {
+    margin: 4px 0 4px 0;
+
+}
+
+.container img,
+.container h1 {
+    float: left;
+    
+}
+/* ========== MENU ========== */
+.menu { 
+    clear: both; /*serve para um corte para os floats*/  
+    /* margin-top: 10px;  */
+}
+
+.menu a {
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 321px;
+    display: inline-block;
+    text-align: center;
+    /* border-bottom: 3px solid violet; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: background 1s;
+}
+/* para aumentar o tamanho da fonte quando passar o mouse por cima */
+/* .menu a:hover{
+     font-size: 35px;
+
+} */
+/* primeiro */
+.menu a:first-child{
+    border-bottom: 3px solid #fad100;
+    /* background: yellowgreen; */
+
+}
+
+.menu a:first-child:hover{
+    background: #fad100 ;
+    color: black;
+
+}
+/* do meio */
+.menu a:nth-child(2){
+    border-bottom:3px solid #4a8507;
+}
+
+.menu a:nth-child(2):hover{
+    background:#4a8507;
+    color: black;
+}
+/* ultimo */
+.menu a:last-child{
+    border-bottom: 3px solid #0066cc;
+}
+
+.menu a:last-child:hover{
+    background:#0066cc;
+    color: black;
+}
+
+.container img:hover{
+    /* width: 115px; */
+    /* -webkit-filter: grayscale(100%); /*Safari 6.0 - 9.0 */
+     /* filter: grayscale(100%);   */
+    /* -webkit-transform: scaleX(-1); */
+    transform: scaleX(-1);
+    /* transform: rotateY(180deg); */
+
+    
+}
+
+
+/* rodapé */
+footer {
+    background: rgba( 0, 0, 0, 0.5);
+    color: white;   
+    text-align: center;
+    position: fixed;  /*pode ser absolute ou fixed - POREM o absolute vai sofrer com o width + padding*/
+    bottom: 0;
+    width: 100%;
+    padding: 10px;    
+
+}
+
+/*NEON*/
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 5px #7bacff,
+                     0 0 10px #7bacff,
+                     0 0 20px #7bacff,
+                     0 0 40px #7bacff,
+                     0 0 60px #7bacff,
+                     0 0 80px #7bacff,
+                     0 0 90px #7bacff,
+                     0 0 100px #7bacff,
+                     0 0 150px #7bacff;
+    
+    }
+    50% {
+        text-shadow: 0 0 5px #7bffce,
+                     0 0 10px #7bffce,
+                     0 0 20px #7bffce,
+                     0 0 40px #7bffce,
+                     0 0 60px #7bffce,
+                     0 0 80px #7bffce,
+                     0 0 90px #7bffce,
+                     0 0 100px#7bffce,
+                     0 0 150px #7bffce;
+    
+    }
+    75% {
+        text-shadow: 0 0 5px #ff7bac,
+                     0 0 10px #ff7bac,
+                     0 0 20px #ff7bac,
+                     0 0 40px #ff7bac,
+                     0 0 60px #ff7bac,
+                     0 0 80px #ff7bac,
+                     0 0 90px #ff7bac,
+                     0 0 100px#ff7bac,
+                     0 0 150px #ff7bac;
+    
+    }
+    100% {
+        text-shadow: 0 0 5px #7bacff,
+                     0 0 10px #7bacff,
+                     0 0 20px #7bacff,
+                     0 0 40px #7bacff,
+                     0 0 60px #7bacff,
+                     0 0 80px #7bacff,
+                     0 0 90px #7bacff,
+                     0 0 100px#7bacff,
+                     0 0 150px #7bacff;
+    
+    }
+}
+
+
